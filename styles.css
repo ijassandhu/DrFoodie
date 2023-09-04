@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;    
+    background-color:#611187;
+    background-image: linear-gradient(to right top, #611187, #7823a1, #8f33bc, #a743d8, #c054f4);  
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+button{
+    color: black;
+    padding: 10px 25px;
+    background: rgb(238, 238, 71);
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: #000;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #f3232f;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    border: 1px solid #f32323;
+  }
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#Foodie{
+    color: rgb(255, 221, 0);
+    
+}
+
+.detel p{
+    color: #fff;
+    line-height: 22px;
+}
+
+.detel a{
+    background: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.detel a:hover {
+    background: rgb(255, 221, 0);
+    color: black;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    
+}
+.shape {
+    height: 250px;
+    width: 650px;
+    margin-bottom: 16%;
+}
+.Food {
+    height: 500px;
+    margin-bottom: 4%;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .Food{
+    left: 45%;
+}
+
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social a{
+    font-size: 30px;
+    color: #212121;
+    margin-right: 20px;
+}
+
+#socialTwitter:hover{
+    color: rgb(0, 162, 255);
+}
+
+#socialInsta:hover {
+    color: firebrick;
+}
+
+#socialLinkedin:hover {
+    color: rgb(5, 5, 137);
+}
+
+
+.squares li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.1);
+    animation: animate 20s linear infinite;
+    bottom: -165px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .squares li:nth-child(1){
+    left: 26%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 0s;
+  }
+  
+  .squares li:nth-child(2){
+    left: 8%;
+    width: 5px;
+    height: 5px;
+    animation-delay: 5s;
+    animation-duration: 5s;
+  }
+  
+  .squares li:nth-child(3){
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 10s;
+  }
+  
+  .squares li:nth-child(4){
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 6s;
+    animation-duration: 40s;
+  }
+  
+  .squares li:nth-child(5){
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+  }
+  
+  .squares li:nth-child(6){
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 10s;
+  }
+  
+  .squares li:nth-child(7){
+    left: 55%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .squares li:nth-child(8){
+    left: 65%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 35s;
+  }
+  
+  .squares li:nth-child(9){
+    left: 70%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 20s;
+    animation-duration: 20s;
+  }
+  
+  .squares li:nth-child(10){
+    left: 85%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1s;
+    animation-duration: 15s;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 30%;
+      -webkit-border-radius: 30%;
+      -moz-border-radius: 30%;
+    }
+  
+    100% {
+      transform: translateY(-1000px) rotate(600deg);
+      opacity: 0;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;  }
+  }

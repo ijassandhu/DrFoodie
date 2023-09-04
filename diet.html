@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dr.Foodie - Weight</title>
+    <link rel="stylesheet" href="./diet.css">
+</head>
+<body>
+
+    <div class="pageBody">
+
+        <div class="navbar">
+            <div class="icon">
+                <a href="./index.html"> <img src="./images/logo1.png" class="logo"  alt="" width="230" height="75"></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FOOD</a></li>
+                    <li><a href="#">DIET</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+        <form action="" method="POST" onsubmit="submitA();return false;">
+            <label for="Region">Select Region:</label>
+                <select name="region" id="region" onchange="">
+                    <option value="1">East-Indian</option>
+                    <option value="2">North-Indian</option>
+                    <option value="3">South-Indian</option>
+                    <option value="4">West-Indian</option>
+                    <option value="5">International</option>
+                </select>
+            <label for="Preference">Select Preference:</label>
+                <select name="preference" id="preference">
+                    <option value="a">Veg</option>
+                    <option value="b">Non-Veg</option>
+                </select>
+
+            <button onclick="">Get Your Meal</button>
+        </form>
+
+        <div class="content">
+            <div id="1a" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/East Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="2a" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/North Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="3a" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/South Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="4a" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/West Indian Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="5a" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/International Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+
+            <div id="1b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/East Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="2b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/North Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="3b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/South Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="4b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/West Indian Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+            <div id="5b" style="display: none;" class="data">
+                <p class="image"><img src="Diet Plan/Male/International Non Veg Meal Plan - Male.jpg" width="1000px"></p>
+            </div>
+
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+     function submitA(){
+        let region=document.querySelector('#region').value;
+        let preference=document.querySelector('#preference').value;
+        let res = region+""+preference;
+        console.log(res);
+        try {
+            document.getElementById(res).style.display= "block";
+        }catch(err) {
+            console.error(err);
+        }
+        // return false;
+     }
+    </script>
+</body>
+</html>

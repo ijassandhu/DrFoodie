@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+}
+body {
+  background-color: antiquewhite;
+}
+
+.navbar{
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo{
+  float: left;
+  margin-top: 5px
+}
+
+.menu{
+  width: 400px;
+  float: left;
+  height: 70px;
+  margin-left: 7.5%;
+}
+
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #0d0d0d;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+
+ul li a:hover{
+  color: #ff7200;
+}
+
+
+    /* .pageBody {
+    
+      width: 100%;
+      height: 100%;
+      background-color:#611187;
+      background-image: linear-gradient(to right top, #611187, #7823a1, #8f33bc, #a743d8, #c054f4);  
+      font-family: 'Comfortaa', cursive;
+    }
+    .squares li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.1);
+    animation: animate 20s linear infinite;
+    bottom: -165px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .squares li:nth-child(1){
+    left: 26%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 0s;
+  }
+  
+  .squares li:nth-child(2){
+    left: 8%;
+    width: 5px;
+    height: 5px;
+    animation-delay: 5s;
+    animation-duration: 5s;
+  }
+  
+  .squares li:nth-child(3){
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 10s;
+  }
+  
+  .squares li:nth-child(4){
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 6s;
+    animation-duration: 40s;
+  }
+  
+  .squares li:nth-child(5){
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+  }
+  
+  .squares li:nth-child(6){
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 10s;
+  }
+  
+  .squares li:nth-child(7){
+    left: 55%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .squares li:nth-child(8){
+    left: 65%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 35s;
+  }
+  
+  .squares li:nth-child(9){
+    left: 70%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 20s;
+    animation-duration: 20s;
+  }
+  
+  .squares li:nth-child(10){
+    left: 85%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1s;
+    animation-duration: 15s;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 30%;
+      -webkit-border-radius: 30%;
+      -moz-border-radius: 30%;
+    }
+  
+    100% {
+      transform: translateY(-1000px) rotate(600deg);
+      opacity: 0;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;  }
+  } */
+
+
+  .banner {
+    background-color: #dc3545;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannerImg {
+    margin-left: 6.5%;
+  }
+
+  .bannerTagline {
+    text-align: center;
+    float: right;
+    margin-top: -21.5%;
+    margin-right: 5%;
+    font-size: 21px;
+  }
+  #bannerLine1 {
+    color: #ffbf1e;
+  }
+  #bannerLine2 {
+    color: white;
+  }
+
+  .bannerButton {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #dc3545;
+    background-color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .bannerButton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .mealFormCard {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    padding: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .cardText {
+    color: #eca900;
+  }
+
+  #age {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .cardGender {
+    line-height: 1.75;
+  }
+  .cardAge {
+    line-height: 1.75;
+  }
+  .cardSubmit{
+    line-height: 5;
+    text-align: center;
+  }
+
+  .mealFormButton {
+    width: 105%;
+    height: 40px;
+    border: 0px;
+    background-color: #eca900;
+    border-radius: 4px;
+    font-size: 17px;
+  }
+
+  .mealFormButton:hover{
+    color: white;
+  }
+
+  .bannerPara {
+    background-color: white;
+    padding: 10px;
+  }
